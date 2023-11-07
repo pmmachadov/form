@@ -4,65 +4,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="theme-style" rel="stylesheet" href="css/style.css">
   <title>Forms Class 1</title>
 </head>
 
 <body>
-  <h1>Food Preferences Form</h1>
-  <form action="#" method="post">
+  <form class="form-container" action="#" method="post">
+    <h1>Food Preferences Form</h1>
     <ul>
       <li>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <label class="label-bold" for="name">Name:</label>
+        <input class="form-input" type="text" id="name" name="name" required>
       </li>
       <li>
-        <label for="country">Country:</label>
-        <input type="text" id="country" name="country">
+        <label class="label-bold" for="country">Country:</label>
+        <input class="form-input" type="text" id="country" name="country">
       </li>
       <li>
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age">
+        <label class="label-bold" for="age">Age:</label>
+        <input class="form-input" type="number" id="age" name="age">
       </li>
       <li>
-        <label for="food-allergy">Food Allergies:</label>
+        <label class="label-bold" for="food-allergy">Food Allergies:</label>
         <ul>
           <li>
-            <input type="checkbox" id="gluten" name="food-allergy" value="Gluten">
+            <input class="checkbox-label" type="checkbox" id="gluten" name="food-allergy" value="Gluten">
             <label for="gluten">Gluten</label>
           </li>
           <li>
-            <input type="checkbox" id="lactose" name="food-allergy" value="Lactose">
+            <input class="checkbox-label" type="checkbox" id="lactose" name="food-allergy" value="Lactose">
             <label for="lactose">Lactose</label>
           </li>
           <li>
-            <input type="checkbox" id="nuts" name="food-allergy" value="Nuts">
+            <input class="checkbox-label" type="checkbox" id="nuts" name="food-allergy" value="Nuts">
             <label for="nuts">Nuts</label>
           </li>
           <li>
-            <input type="checkbox" id="other-allergy" name="food-allergy" value="Other">
+            <input class="checkbox-label" type="checkbox" id="other-allergy" name="food-allergy" value="Other">
             <label for="other-allergy">Other (Specify):</label>
-            <input type="text" id="other-allergy-text" name="other-allergy-text">
+            <input class="form-input" type="text" id="other-allergy-text" name="other-allergy-text">
           </li>
         </ul>
       </li>
       <li>
-        <label for="diet-type">Diet Type:</label>
-        <select id="diet-type" name="diet-type">
+        <label class="label-bold" for="diet-type">Diet Type:</label>
+        <select class="form-input" id="diet-type" name="diet-type">
           <option value="Omnivore">Omnivore</option>
           <option value="Vegetarian">Vegetarian</option>
           <option value="Vegan">Vegan</option>
         </select>
       </li>
       <li>
-        <label for="additional-info">Additional Information:</label>
-        <textarea id="additional-info" name="additional-info"></textarea>
+        <label class="label-bold" for="additional-info">Additional Information:</label>
+        <textarea class="form-input" id="additional-info" name="additional-info"></textarea>
       </li>
       <li>
         <h2>Preferences:</h2>
       </li>
       <li>
-        <label for="cuisine-type">Cuisine Type:</label>
-        <select id="cuisine-type" name="cuisine-type">
+        <label class="label-bold" for="cuisine-type">Cuisine Type:</label>
+        <select class="form-input" id="cuisine-type" name="cuisine-type">
           <option value="Italian">Italian</option>
           <option value="Mexican">Mexican</option>
           <option value="Asian">Asian</option>
@@ -78,77 +79,78 @@
         </select>
       </li>
       <li>
-        <label for="other-cuisine">Other Cuisine Type (Specify):</label>
-        <textarea id="other-cuisine" name="other-cuisine"></textarea>
+        <label class="label-bold" for="other-cuisine">Other Cuisine Type (Specify):</label>
+        <textarea class="form-input" id="other-cuisine" name="other-cuisine"></textarea>
       </li>
       <li>
-        <label for="spicy-level">Spicy Level:</label>
-        <input type="range" id="spicy-level" name="spicy-level" min="1" max="5">
-        <output for="spicy-level" id="spicy-output">Spicy Level: 1</output>
+        <label class="label-bold" for="spicy-level">Spicy Level:</label>
+        <input class="form-input range-input" type="range" id="spicy-level" name="spicy-level" min="1" max="5">
+        <output class="output-label" for="spicy-level" id="spicy-output">Spicy Level: 1</output>
       </li>
       <li>
-        <label for="salt-level">Salt Level:</label>
-        <input type="range" id="salt-level" name="salt-level" min="1" max="5">
-        <output for="salt-level" id="salt-output">Salt Level: 1</output>
+        <label class="label-bold" for="salt-level">Salt Level:</label>
+        <input class="form-input range-input" type="range" id="salt-level" name="salt-level" min="1" max="5">
+        <output class="output-label" for="salt-level" id="salt-output">Salt Level: 1</output>
       </li>
       <li>
-        <label for="portion-size">Portion Size:</label>
-        <input type="radio" id="small" name="portion-size" value="Small">
+        <label class="label-bold" for="portion-size">Portion Size:</label>
+        <input class="radio-label" type="radio" id="small" name="portion-size" value="Small">
         <label for="small">Small</label>
-        <input type="radio" id="medium" name="portion-size" value="Medium">
+        <input class="radio-label" type="radio" id="medium" name="portion-size" value="Medium">
         <label for="medium">Medium</label>
-        <input type="radio" id="large" name="portion-size" value="Large">
+        <input class="radio-label" type="radio" id="large" name="portion-size" value="Large">
         <label for="large">Large</label>
       </li>
       <li>
-        <label for="drink-type">Drink Type:</label>
-        <select id="drink-type" name="drink-type">
+        <label class="label-bold" for="drink-type">Drink Type:</label>
+        <select class="form-input" id="drink-type" name="drink-type">
           <option value="Water">Water</option>
           <option value="Soda">Soda</option>
           <option value="Tea">Tea</option>
-          <option value="Other">Other</option>
         </select>
       </li>
       <li>
-        <label for="dessert-type">Dessert Type:</label>
+        <label class="label-bold" for="dessert-type">Dessert Type:</label>
         <ul>
           <li>
-            <input type="checkbox" id="cake" name="dessert-type" value="Cake">
+            <input class="checkbox-label" type="checkbox" id="cake" name="dessert-type" value="Cake">
             <label for="cake">Cake</label>
           </li>
           <li>
-            <input type="checkbox" id="ice-cream" name="dessert-type" value="Ice Cream">
+            <input class="checkbox-label" type="checkbox" id="ice-cream" name="dessert-type" value="Ice Cream">
             <label for="ice-cream">Ice Cream</label>
           </li>
           <li>
-            <input type="checkbox" id="fruit" name="dessert-type" value="Fruit">
-            <label for="fruit">Fruit</label>
+            <input class="checkbox-label" type="checkbox" id="fruit" name="dessert-type" value="Fruit">
+            <label for "fruit">Fruit</label>
           </li>
         </ul>
       </li>
       <li>
-        <label for="cold-warm-food">Cold or Warm Food:</label>
-        <input type="radio" id="cold" name="cold-warm-food" value="Cold">
+        <label class="label-bold" for="cold-warm-food">Cold or Warm Food:</label>
+        <input class="radio-label" type="radio" id="cold" name="cold-warm-food" value="Cold">
         <label for="cold">Cold</label>
-        <input type="radio" id="warm" name="cold-warm-food" value="Warm">
+        <input class="radio-label" type="radio" id="warm" name="cold-warm-food" value="Warm">
         <label for="warm">Warm</label>
       </li>
       <li>
-        <label for="halal">Halal:</label>
-        <input type="checkbox" id="halal" name="halal" value="Yes">
-      </li>
-      <li>
-        <label for="vegan">Vegan:</label>
-        <input type="checkbox" id="vegan" name="vegan" value="Yes">
-      </li>
-      <li>
-        <label for="vegetarian">Vegetarian:</label>
-        <input type="checkbox" id="vegetarian" name="vegetarian" value="Yes">
-      </li>
-    </ul>
-    <input type="submit" value="Submit">
+        <label class="label-bold" for="dessert-type">Types of food</label>
+        <ul>
+          <li>
+            <label for="halal">Halal:</label>
+            <input class="checkbox-label" type="checkbox" id="halal" name="halal" value="Yes">
+          </li>
+          <li>
+            <label class="checkbox-label" for="vegan">Vegan:</label>
+            <input class="checkbox-label" type="checkbox" id="vegan" name="vegan" value="Yes">
+          </li>
+          <li>
+            <label class="checkbox-label" for="vegetarian">Vegetarian:</label>
+            <input class="checkbox-label" type="checkbox" id="vegetarian" name="vegetarian" value="Yes">
+          </li>
+        </ul>
+        <input class="submit-button" type="submit" value="Submit">
   </form>
-
   <script src="js/javascript.js"></script>
 </body>
 
