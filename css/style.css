@@ -48,10 +48,9 @@ li {
 }
 
 .label-bold[for="name"]::after {
-  content: " *";
   color: red;
+  content: " *";
 }
-
 
 .form-input {
   border: 1px solid #ccc;
